@@ -37,7 +37,7 @@ public :
             int num = 0;
             while(i < data.size() && c >= 48 && c <= 57) {
                 num = (num * 10) + (c - 48);
-                c = data[i++];
+                c = data[++i];
             }
             for(int it = 0; it < num - 1; it++) {
                 res.push_back(res.back());
